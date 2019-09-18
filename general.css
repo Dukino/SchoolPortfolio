@@ -25,3 +25,8 @@
     background-color: #4CAF50;
     color: white;
   }
+
+  /* My custom CSS */
+  .main-body {
+      margin: 30px;
+  }
