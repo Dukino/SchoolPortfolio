@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en/us">
+<html lang="en">
 
 <head>
     <title>Web Frontend Development | Tyler Brown</title>
@@ -10,18 +10,14 @@
         CIT230 - Web Frontend Development where all assignments and links 
         will be stored and displayed.">
     <link rel="stylesheet" type="text/css" href="/CIT230Assets/CIT230.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
-
-    <script>
-        document.getElementById('lastModified').innerHTML = document.lastModified;
-        document.getElementById('year').innerHTML = document.lastModified.getFullYear();
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Tyler Brown</h1>
-        <img src="CIT230Assets/me.png" alt="Photograph of Tyler Brown.">
+        <img src="CIT230Assets/me.jpg" alt="Photographic portrait of Tyler Brown.">
     </header>
     <div class="main-content">
         <h2>CIT 230: Assignment Portal</h2>
@@ -38,6 +34,11 @@
         <p>&copy; <span id="year">n/a</span> | Tyler R. Brown | Rexburg | Brigham Young University - Idaho</p>
         <p>Last Updated: <span id="lastModified">n/a</span></p>
     </footer>
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById('lastModified').innerHTML = document.lastModified;
+        document.getElementById('year').innerHTML = year;
+    </script>
 </body>
 
 </html>
