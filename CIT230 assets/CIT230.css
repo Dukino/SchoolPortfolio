@@ -1,0 +1,45 @@
+/**************************************
+* CSS formats and styles for CIT230 
+*  pages and elements.
+**************************************/
+header {
+    background: #0076c6;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+
+header > h1 {
+    display: inline;
+    margin: 15px;
+    padding: 10px;
+    font-size: 45px;
+}
+
+header > img {
+    max-width: 300px;
+    float: right;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+div.main-content {
+    margin: 0 0 0 25px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background: #0076c6;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+}
