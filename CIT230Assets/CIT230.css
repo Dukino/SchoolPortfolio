@@ -11,9 +11,7 @@ header {
 
 header > h1 {
     display: inline;
-    margin: 15px;
     padding: 10px;
-    font-size: 45px;
 }
 
 header > img {
@@ -21,6 +19,13 @@ header > img {
     float: right;
     border-radius: 10px;
     margin-bottom: 15px;
+    text-emphasis: none;
+}
+
+@media screen and (max-width: 699px) {
+    header > img {
+        display: none;
+    }
 }
 
 div.main-content {
@@ -34,6 +39,10 @@ footer {
     color: white;
     padding: 10px;
     border-radius: 10px;
+}
+
+footer > p > a {
+    color: white !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

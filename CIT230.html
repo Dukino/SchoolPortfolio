@@ -32,12 +32,13 @@
 
     <footer>
         <p>&copy; <span id="year">n/a</span> | Tyler R. Brown | Rexburg | Brigham Young University - Idaho</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">MDN HTML5 Documentation Site</a></p>
         <p>Last Updated: <span id="lastModified">n/a</span></p>
     </footer>
     <script>
         var year = new Date().getFullYear();
-        document.getElementById('lastModified').innerHTML = document.lastModified;
         document.getElementById('year').innerHTML = year;
+        document.getElementById('lastModified').innerHTML = document.lastModified;
     </script>
 </body>
 
