@@ -41,7 +41,9 @@ footer {
     border-radius: 10px;
 }
 
-footer > p > a {
+footer > p > a:link,
+footer > p > a:visited,
+footer > p > a:hover {
     color: white !important;
 }
 
