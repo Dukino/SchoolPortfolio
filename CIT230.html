@@ -11,6 +11,11 @@
         will be stored and displayed.">
     <link rel="stylesheet" type="text/css" href="/CIT230Assets/CIT230.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+    <script>
+        document.getElementById('lastModified').innerHTML = document.lastModified;
+        document.getElementById('year').innerHTML = document.lastModified.getFullYear();
+    </script>
 </head>
 
 <body>
@@ -30,8 +35,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2019 | Tyler R. Brown | Rexburg | Brigham Young University - Idaho</p>
-        <p>Last Updated: 9/21/2019</p>
+        <p>&copy; <span id="year">n/a</span> | Tyler R. Brown | Rexburg | Brigham Young University - Idaho</p>
+        <p>Last Updated: <span id="lastModified">n/a</span></p>
     </footer>
 </body>
 
