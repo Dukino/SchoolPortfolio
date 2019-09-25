@@ -2,6 +2,8 @@
 * CSS formats and styles for CIT230 
 *  pages and elements.
 **************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
 header {
     background: #0076c6;
     border-radius: 10px;
