@@ -21,6 +21,7 @@ nav ul {
     display: inline-block;
     list-style-type: none;
     padding: 0;
+    margin-bottom: 15px;
 }
 
 nav ul li {
@@ -122,6 +123,7 @@ div.grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 15px;
+    margin-bottom: 30px;
 }
 
 div.grid-container .item1 {
