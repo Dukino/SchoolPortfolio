@@ -1,0 +1,135 @@
+/**************************************
+* CSS formats and styles for CIT230 
+*  pages and elements.
+**************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+body {
+    margin: 0px;
+}
+
+/*************************************
+* COLOR FORMATTING
+*************************************/
+:root {
+    --primary-color: #0076c6;
+    --secondary-color: #1a1a1d;
+    --accent-color: #525252;
+}
+/*************************************
+* NAV FORMATTING
+*************************************/
+nav {
+    background: var(--accent-color);
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    display: inline;
+    background: var(--accent-color);
+    padding: 15px;
+    margin: 0 -2px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0px;
+}
+
+nav ul li.active, nav ul li:hover {
+    background: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        font-size: 1em;
+    }
+}
+
+/*************************************
+* HEADER FORMATTING
+*************************************/
+header {
+    background: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+header > h1 {
+    padding: 15px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    header > h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    header > img {
+        max-width: 50px;
+    }
+}
+
+/*************************************
+* MAIN CONTENT FORMATTING
+*************************************/
+main {
+    margin: 0 300px;
+    padding-bottom: 15px;
+}
+
+main img {
+    width: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, li, span, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1439px) {
+    main {
+        margin: 0 15px;
+    }
+}
+
+/*************************************
+* FLEXBOX FORMATTING
+*************************************/
+main * {
+    display: flex;
+}
+
+/*************************************
+* FOOTER FORMATTING
+*************************************/
+footer {
+    clear: both;
+    text-align: center;
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+footer > p > a:link,
+footer > p > a:visited,
+footer > p > a:hover {
+    color: white !important;
+}
