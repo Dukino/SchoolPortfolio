@@ -2,54 +2,47 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Web Frontend Development | Tyler Brown</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <meta name="author" content="Tyler Brown">
+    <meta name="description" content="Home Page for Tyler Brown and his portfolio. 
+        Found within are personal and/or school projects that Tyler has worked on and wants to showcase.">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" media="screen">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="CIT230.html">CIT 230</a>
-    </div>
-    <div class="container-fluid main-body">
-        <p><i>*Website currently under construction.</i></p>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="tile">
-                    <img class="tile-icon" src="images/icon.jpg" alt="placeholder image" />
-                    <h2>Item 1</h2>
-                    <p>Placeholder text for testing purposes and to see how
-                        much will fit before it gets too crowded.
-                    </p>
-                </div>
+    <header>
+        <p class="header-title">Tyler Brown's Portfolio</p>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="docs/CIT230/CIT230.html">CIT230</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Projects</h1>
+        <div class="boxes">
+            <div class="box">
+                <h2>CIT230 Home</h2>
+                <p>Repository of my CIT230 assignments.</p>
+                <a href="docs/CIT230/CIT230.html"><i class='fas fa-arrow-circle-right'></i></a>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="tile">
-                    <img class="tile-icon" src="images/icon.jpg" alt="placeholder image" />
-                    <h2>Item 1</h2>
-                    <p>Placeholder text for testing purposes and to see how
-                        much will fit before it gets too crowded.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="tile">
-                    <img class="tile-icon" src="images/icon.jpg" alt="placeholder image" />
-                    <h2>Item 1</h2>
-                    <p>Placeholder text for testing purposes and to see how
-                        much will fit before it gets too crowded.
-                    </p>
-                </div>
+            <div class="box">
+                <h2>Golden Ratio</h2>
+                <p>This is a project that I attempted about the golden ratio</p>
+                <!-- <a href="golden-ratio.html"><i class='fas fa-arrow-circle-right'></i></a> -->
+                <p>*In Progress*</p>
             </div>
         </div>
-
-    </div>
+    </main>
+    <footer>
+        <p>This is the footer!</p>
+    </footer>
 </body>
 
 </html>
