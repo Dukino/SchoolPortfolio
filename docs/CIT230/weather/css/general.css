@@ -12,21 +12,24 @@ body {
 * COLOR FORMATTING
 *************************************/
 :root {
-    --primary-color: #0076c6;
-    --secondary-color: #1a1a1d;
-    --accent-color: #525252;
+    --primary-color: #36558F;
+    --secondary-color: #30323D;
+    --accent-color: #E8C547;
 }
+
 /*************************************
 * NAV FORMATTING
 *************************************/
 nav {
-    background: var(--accent-color);
+    background: var(--secondary-color);
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
-    display: inline-block;
     list-style-type: none;
     padding: 0;
     margin-bottom: 15px;
@@ -34,10 +37,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    background: var(--accent-color);
+    background: var(--secondary-color);
     padding: 15px;
     margin: 0 -2px;
     list-style-type: none;
+    display: block;
 }
 
 nav ul li a {
@@ -46,13 +50,13 @@ nav ul li a {
     margin: 0 0px;
 }
 
-nav ul li.active, nav ul li:hover {
-    background: var(--primary-color);
-}
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+    }
 
-@media screen and (max-width: 768px) {
     nav ul li a {
-        font-size: 1em;
+        flex: 1 1 100%;
     }
 }
 
@@ -66,19 +70,19 @@ header {
     color: white;
 }
 
-header > h1 {
+header>h1 {
     padding: 15px;
     margin: 0px;
 }
 
 @media screen and (max-width: 768px) {
-    header > h1 {
+    header>h1 {
         font-size: 1.2em;
     }
 }
 
 @media screen and (max-width: 699px) {
-    header > img {
+    header>img {
         max-width: 50px;
     }
 }
@@ -95,25 +99,57 @@ main img {
     width: 100px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-p, li, span, a {
+p,
+li,
+span,
+a,
+table * {
     font-family: 'Roboto', sans-serif;
 }
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+    color: white;
+}
+
+.primary {
+    background-color: #36558F;
+}
+
+.secondary {
+    background-color: #30323D;
+}
+
+.accent1 {
+    background-color: #E8C547;
+}
+
+.accent2 {
+    background-color: #90BEDE;
+}
+
 
 @media screen and (max-width: 1439px) {
     main {
         margin: 0 15px;
     }
-}
-
-/*************************************
-* FLEXBOX FORMATTING
-*************************************/
-main * {
-    display: flex;
 }
 
 /*************************************
@@ -128,8 +164,8 @@ footer {
     margin: 0px;
 }
 
-footer > p > a:link,
-footer > p > a:visited,
-footer > p > a:hover {
+footer>p>a:link,
+footer>p>a:visited,
+footer>p>a:hover {
     color: white !important;
 }
