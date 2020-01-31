@@ -22,7 +22,7 @@ nav {
     display: flex;
     flex-flow: column;
     justify-content: center;
-}
+} 
 
 nav ul {
     list-style: none;
@@ -46,6 +46,33 @@ nav ul li a {
     margin: 0 0px;
 }
 
+.navigation li:first-child {
+    display: block;
+    padding-right: 0px;
+}
+
+.navigation li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* needed because of state in small view */
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
 @media screen and (min-width: 768px) {
     nav ul {
         display: flex;
@@ -64,11 +91,18 @@ header {
     margin: 0px;
     padding: 0px;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
-header>h1 {
-    padding: 15px;
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+header .weatherH1 {
     margin: 0px;
+    padding: 15px 0 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,6 +114,18 @@ header>h1 {
 @media screen and (max-width: 699px) {
     header>img {
         max-width: 50px;
+    }
+}
+
+@media only screen and (min-width: 32.5em) {
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 56em) {
+    header h1 {
+        font-size: 35px;
     }
 }
 
@@ -141,6 +187,35 @@ table * {
     background-color: #90BEDE;
 }
 
+main h2 {
+    text-align: center;
+}
+
+main .contentBox {
+    background-color: #36558F;
+    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px dashed #90BEDE;
+}
+
+@media only screen and (min-width: 32.5em) {
+    .contentBox {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 56em) {
+    .contentBox {
+        max-width: 80%;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width: 1439px) {
     main {

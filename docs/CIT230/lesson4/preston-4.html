@@ -7,32 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tyler Brown">
     <meta name="description" content="Preston Town Page for RainOrShineNow.com">
-    <link rel="stylesheet" type="text/css" href="../css/general.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/general.css" media="screen">
     <link rel="stylesheet" href="../css/normalize.css">
+    <script src="js/main.js"></script>
 </head>
 
-<body> 
+<body>
 
     <header>
-        <h1>Rain or Shine Now</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="preston-4.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
+        <img class="weatherSiteLogo" alt="Clip art of a cloud with a sun peeking from behind it."
+            src="images/rain-or-shine-logo.png">
+        <section class="headings">
+            <h1 class="weatherH1">Rain or Shine Now</h1>
+            <p>The weather site catch phrase/motto</p>
+        </section>
     </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
-        
+        <h2>Preston Idaho</h2>
+        <div class="contentBox">Hero w/ weather summary</div>
+        <div class="contentBox">5 Day Forecast</div>
+        <div class="contentBox">Article</div>
+        <div class="contentBox">Contact Information</div>
     </main>
 
     <footer>
-        <p>&copy; <span id="year">n/a</span> | Tyler R. Brown | Rexburg | Brigham Young University - Idaho</p>
-        <p>Last Updated: <span id="lastModified">n/a</span></p> 
+        <p>&copy; <span id="year">n/a</span> Rain Or Shine Now | Attributions | Tyler Brown</p>
+        <p>Last Updated: <span id="lastModified">n/a</span></p>
     </footer>
 </body>
 

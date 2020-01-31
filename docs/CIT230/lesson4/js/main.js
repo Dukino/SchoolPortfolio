@@ -4,3 +4,10 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById('year').innerText = year;
     document.getElementById("lastModified").innerText = lastModified;
 });
+
+const hambutton = document.querySelector(".ham");
+hambutton.addEventListener("click", toggleMenu, false);
+
+function toggleMenu() {
+  document.querySelector(".navigation").classList.toggle("responsive");
+}
