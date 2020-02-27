@@ -3,8 +3,9 @@ table * {
     text-align: center;
 }
 
-.blkFri:first-child {
-    font-style: italic;
+table {
+    box-shadow: 7px 7px 15px 3px #628CA6;
+    border-radius: 10px;
 }
 
 tbody tr:nth-child(2n - 1) {
@@ -25,10 +26,6 @@ thead tr:nth-child(2) th,
 #goalMet {
     background-color: #628CA6;
     color: white;
-}
-
-tbody tr.blkFri {
-    text-align: center;
 }
 
 tfoot tr td {
