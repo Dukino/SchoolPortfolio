@@ -1,0 +1,46 @@
+table * {
+    font-family: "Ubuntu", serif;
+    text-align: center;
+}
+
+table {
+    box-shadow: 7px 7px 15px 3px #628CA6;
+    border-radius: 10px;
+}
+
+tbody tr:nth-child(2n - 1) {
+    background-color: #E7F0ED;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #E7FFED;
+}
+
+thead tr:first-child th {
+    background-color: #7fb9c2;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+thead tr:nth-child(2) th,
+#goalMet {
+    background-color: #628CA6;
+    color: white;
+}
+
+tfoot tr td {
+    background-color: #7fb9c2;
+    font-size: 0.7em;
+}
+
+td, th {
+    padding: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #bbb;
+}
