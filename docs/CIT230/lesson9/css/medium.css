@@ -119,6 +119,17 @@
         display: none;
     }
 
+    main p {
+        max-width: 80%;
+    }
+
+    main img {
+        display: block;
+        margin: 0 auto;
+        align-self: center;
+        width: 80%;
+    }
+
     .cards {
         margin: 0 auto;
         display: flex;

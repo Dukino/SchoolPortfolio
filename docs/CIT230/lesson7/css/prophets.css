@@ -1,0 +1,45 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #30323D;
+    color: white;
+}
+
+main, header, footer {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.cards section {
+    border: 1px solid #333;
+    width: 100%;
+    background-color: #36558F;
+    color: white;
+}
+
+.cards section p {
+    padding: 0em;
+    margin: 0em;
+}
+
+.cards section img {
+    max-width: 13em;
+    margin-top: 1em;
+}
+
+@media only screen and (min-width: 32.5em) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 56em) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

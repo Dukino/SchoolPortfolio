@@ -168,8 +168,15 @@ form {
     background-color: #90BEDE;
 }
 
-main h2 {
+main h2, main p {
     text-align: center;
+    margin: 1em auto;
+    
+}
+
+main img {
+    margin: 0 auto;
+    width: 100%;
 }
 
 main .heroBox {
