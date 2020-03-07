@@ -1,0 +1,151 @@
+@media only screen and (min-width: 32.5em) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* needed because of state in small view */
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .heroBox, 
+    .articleBox, 
+    .forecastBox, 
+    .contactBox {
+        max-width: 90%;
+    }
+
+    .forecastBox h3 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    main .articleBox {
+        display: grid;
+        grid-gap: 0 1rem;
+    }
+
+    main .articleBox .article1 { 
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1; 
+    }
+    main .articleBox .article2 { 
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1; 
+    }
+
+    footer {
+        max-width: 91.5%;
+        margin: 0 auto;
+    }
+
+    header .weatherSiteLogo {
+        width: 110px;
+    }
+
+    main .contactBox {
+        display: grid;
+        grid-gap: 2rem;
+    }
+
+    main .contactBox p {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    main .contactBox img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+    }
+
+    main .heroBox img {
+        margin-bottom: 1rem;
+
+    }
+
+    main .forecastBox {
+        display: block;
+        background-color: #36558F;
+        color: white;
+        display: block;
+        margin: 10px auto;
+        padding: 15px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    main .forecastBox table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #30323D;
+    }
+
+    main .forecastBox table th {
+        background-color: #30323D;
+        padding: 1rem 0;
+    }
+
+    main .forecastBox table td {
+        background-color: white;
+        color: black;
+    }
+
+    .overlay-medium {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        color: #E8C547;
+        font-size: 5em;
+    }
+
+    .overlay-large,
+    .overlay-small {
+        display: none;
+    }
+
+    .cards {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
+
+    .cards section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin: 0.25em auto;
+        padding: 0.5em 0;
+    }
+
+    .cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .cards section img {
+        max-width: 275px;
+    }
+
+    .cards section div {
+        max-width: 50%;
+    }
+
+}

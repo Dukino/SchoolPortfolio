@@ -1,0 +1,370 @@
+body {
+    margin: 0px; 
+}
+
+/*************************************
+* COLOR FORMATTING
+*************************************
+:root {
+    --primary-color: #36558F;
+    --secondary-color: #30323D;
+    --accent-color: #E8C547;
+}
+
+*/
+
+section#announcement * {
+    text-align: center;
+}
+
+section#announcement {
+    background: #E8C547;
+    padding: 5px;
+    margin: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*************************************
+* NAV FORMATTING
+*************************************/
+nav {
+    background: #30323D;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+} 
+
+nav ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0rem;
+    margin: 0px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    background: #30323D;
+    padding: 15px;
+    margin: 0 0px;
+    list-style-type: none;
+    display: block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0px;
+}
+
+.navigation li:first-child {
+    display: block;
+    padding-right: 0px;
+}
+
+.navigation li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
+}
+
+nav ul li.active,
+nav ul li:hover {
+    background-color: #36558F;
+    border-bottom: 5px solid #E8C547;
+}
+
+/*************************************
+* HEADER FORMATTING
+*************************************/
+header {
+    background: #36558F;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+header .weatherH1 {
+    margin: 0px;
+    padding: 15px 0 0px;
+    font-size: 25px;
+}
+
+header .weatherSiteLogo {
+    width: 100px;
+}
+
+/*************************************
+* MAIN CONTENT FORMATTING
+*************************************/
+main {
+    padding-bottom: 15px;
+}
+
+main img {
+    width: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+li,
+span,
+a,
+table,
+table *,
+form {
+    font-family: 'Roboto', sans-serif;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+    color: white;
+}
+
+.primary {
+    background-color: #36558F;
+}
+
+.secondary {
+    background-color: #30323D;
+}
+
+.accent1 {
+    background-color: #E8C547;
+}
+
+.accent2 {
+    background-color: #90BEDE;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main .heroBox {
+    display: block;
+    margin: 10px auto;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding: 0px;
+}
+
+main .summaryBox {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+main .summaryBox p {
+    margin: 3px;
+}
+
+main .heroBox img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+main .articleBox img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+main .contactBox img {
+    width: 100%;
+}
+
+main .heroBox .summaryBox {
+    position: absolute;
+    margin: 1rem 0 0 1rem;
+    min-width: 50%;
+    background-color: rgb(54,85,143, 0.9);
+    border: 1px solid #30323D;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+main .articleBox {
+    background-color: #30323D;
+    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .articleBox a {
+    color: white;
+}
+
+main {
+    padding-bottom: 0px;
+}
+
+main .contactBox {
+    background-color: #36558F;
+    color: white;
+    display: block;
+    margin: 10px auto 0px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .forecastBox {
+    display: none;
+}
+
+.contactTitle {
+    font-weight: bold;
+}
+
+.overlay-small {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: #E8C547;
+    font-size: 5em;
+}
+
+.overlay-large,
+.overlay-medium {
+    display: none;
+}
+
+/*************************************
+* CARDS FORMATTING
+*************************************/
+.cards {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.cards section {
+    border: 1px solid #333;
+    width: 100%;
+    background-color: #36558F;
+    color: white;
+}
+
+.cards section div {
+    text-align: center;
+}
+
+.cards section img {
+    width: 100%;
+    padding: 0px;
+}
+
+
+/*************************************
+* FORM FORMATTING
+*************************************/
+form {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #888;
+    border-radius: 0.2em;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+form fieldset label {
+    display: block;
+    margin-top: 0.6rem;
+}
+
+form div.radio {
+    margin-left: 1rem;
+}
+
+form div.radio input,
+form div.radio label {
+    min-width: 10px;
+    display: inline-block;
+}
+
+form div.radio input {
+    padding: 0px;
+}
+
+form fieldset input,
+form fieldset select,
+form fieldset textarea {
+    min-width: 80%;
+    border-radius: 0.2em;
+    border: 1px solid #888;
+    padding: 0.5rem;
+}
+
+form input {
+    border-radius: 0.2em;
+    border: 1px solid #888;
+    padding: 0.5rem;
+}
+
+span.required {
+    color: red;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*************************************
+* FOOTER FORMATTING
+*************************************/
+footer {
+    clear: both;
+    text-align: center;
+    background: #30323D;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+footer>p>a:link,
+footer>p>a:visited,
+footer>p>a:hover {
+    color: white !important;
+}
